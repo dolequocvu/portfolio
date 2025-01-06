@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>Đỗ Lê Quốc Vũ</h1>
+            <p>Game Developer & Designer</p>
+            <button onclick="scrollToSection('projects')">View My Projects</button>
+            <button onclick="scrollToSection('contact')">Contact Me</button>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <div class="container">
+            <p>Hi, I’m John, a passionate game developer skilled in creating engaging 2D/3D games using Unity and Unreal Engine. I specialize in gameplay programming, AI, and interactive storytelling.</p>
+            <div class="skills-icons">
+                <i class="fab fa-unity"></i>
+                <i class="fab fa-unreal-engine"></i>
+                <i class="fas fa-code"></i>
+                <i class="fas fa-gamepad"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="project1-thumbnail.jpg" alt="Project 1">
+                    <h3>Cyberpunk Shooter</h3>
+                    <p>A fast-paced action game set in a futuristic world.</p>
+                </div>
+                <div class="project-card">
+                    <img src="project2-thumbnail.jpg" alt="Project 2">
+                    <h3>Puzzle Adventure</h3>
+                    <p>A challenging puzzle game with procedurally generated levels.</p>
+                </div>
+                <div class="project-card">
+                    <img src="project3-thumbnail.jpg" alt="Project 3">
+                    <h3>Fantasy RPG</h3>
+                    <p>An immersive role-playing game with dynamic storytelling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2>Skills & Tools</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fab fa-unity"></i>
+                    <p>Unity</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-unreal-engine"></i>
+                    <p>Unreal Engine</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <p>C++, C#, Python</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-paint-brush"></i>
+                    <p>Blender, Photoshop</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
