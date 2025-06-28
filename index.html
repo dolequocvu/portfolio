@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Quoc Vu Do - Developer & Game Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">Le Quoc Vu Do</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <img src="images/IMG_20250628_145254.jpg" alt="Le Quoc Vu Do" class="profile-image">
+            </div>
+            <div class="hero-info">
+                <h1>Le Quoc Vu Do</h1>
+                <p class="hero-subtitle">Developer & Game Designer</p>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>A developer with a passion for game development. I love coding and watching how lines of code can bring unlimited imaginations and ideas to life. Let's connect and see the magic of programming!</p>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="cta-button primary-button">Get in Touch</a>
+                    <a href="https://www.linkedin.com/in/vu-do-8017ab24a/" class="cta-button secondary-button" target="_blank">View LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <a href="projects/x-pool.html" class="project-card">
+                <div class="project-status">
+                    <span class="status-badge">In Development</span>
+                    <span class="project-status-subtext">Expected Release: Q4 2025</span>
+                </div>
+                <div class="project-thumbnail">
+                    <img src="images/projects/x-pool/Pool.PNG" alt="X-Pool Gameplay" class="project-image">
+                </div>
+                <h3>X-Pool</h3>
+                <p>X-Pool is a bold, culturally rich multiplayer pool game that blends classic billiards gameplay with modern live features. Players around the world can challenge friends or join global matchmaking for quick matches, compete in rotating tournaments and climb leaderboards, and unlock and collect unique cosmetics like cue skins and table designs. With optional Web3-powered ownership and token-driven community events, X-Pool offers a player-first experience that balances competitive thrills with social engagement and rewarding progress.</p>
+                <div class="project-tech">
+                    <span>Technology: C# (Unity Engine)</span>
+                    <span>Progress: Almost finished</span>
+                </div>
+            </a>
+            <a href="projects/larkwood-falls.html" class="project-card project-in-progress">
+                <div class="project-status">
+                    <span class="status-badge">In Development</span>
+                </div>
+                <div class="project-thumbnail">
+                    <img src="images/projects/larkwood-falls/IMG_7921.png" alt="Larkwood Falls Thumbnail" class="project-image">
+                </div>
+                <h3>Larkwood Falls</h3>
+                <p>A first-person horror mascot game set in an abandoned underground playpark. Inspired by titles like Indigo Park and Finding Franky, our goal is to create a unique experience with original mascots, chilling atmosphere, and innovative gameplay mechanics.</p>
+                <div class="project-tech">
+                    <span>Technology: C# (Unity Engine)</span>
+                    <span>Progress: Early Development</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Technical & Creative Arsenal</h2>
+        <div class="skills-grid">
+            <div class="skills-section">
+                <h3>Technical Toolkit</h3>
+                <div class="skills-grid-inner">
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-unity"></i>
+                <h3>C# (Unity)</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-unity"></i>
+                <h3>C++</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-gamepad"></i>
+                <h3>Game Design</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-cube"></i>
+                <h3>Unreal Engine</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-node"></i>
+                <h3>Node.js</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML/CSS</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-github"></i>
+                <h3>Git/GitHub</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+            <form id="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="dolequocvu501@gmail.com" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/vu-do-8017ab24a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/your-github-profile" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
