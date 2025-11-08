@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingsters - Le Quoc Vu Do</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">Le Quoc Vu Do</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="project-container">
+        <div class="project-header">
+            <h1>Kingsters</h1>
+            <div class="project-status">
+                <span class="status-badge">Released</span>
+                <a href="#" class="cta-button" target="_blank" id="app-store-link">
+                    <i class="fab fa-apple"></i> Download on App Store
+                </a>
+            </div>
+        </div>
+
+        <div class="project-gallery">
+            <div class="gallery-main">
+                <img src="../images/projects/kingsters/kingsters-main.jpg" alt="Kingsters Gameplay" id="main-image">
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="../images/projects/kingsters/kingsters-1.jpg" alt="Kingsters Screenshot 1" class="thumbnail">
+                <img src="../images/projects/kingsters/kingsters-2.jpg" alt="Kingsters Screenshot 2" class="thumbnail">
+                <img src="../images/projects/kingsters/kingsters-3.jpg" alt="Kingsters Screenshot 3" class="thumbnail">
+            </div>
+        </div>
+
+        <div class="project-content">
+            <div class="info-section">
+                <h2>Project Overview</h2>
+                <p>Kingsters is a modern strategy board game that blends the tactical depth of chess with the dynamic movement of checkers, creating a fast-paced yet deeply strategic experience. Developed at Onid Games, the project aimed to design a multiplayer game that's easy to learn but hard to master—accessible to all ages while rewarding advanced strategy and foresight.</p>
+            </div>
+
+            <div class="info-section">
+                <h2>Gameplay Features</h2>
+                <ul>
+                    <li>Strategic board gameplay combining chess and checkers mechanics</li>
+                    <li>Unique jumping system allowing chain moves (double, triple, or quadruple jumps)</li>
+                    <li>Online multiplayer with ranking and matchmaking systems</li>
+                    <li>AI opponents for offline play with adjustable difficulty</li>
+                    <li>Fast-paced matches (1-10 minutes per game)</li>
+                    <li>Personal rankings and battle formations</li>
+                </ul>
+            </div>
+
+            <div class="info-section">
+                <h2>My Contributions</h2>
+                <ul>
+                    <li>Implemented core board logic and jumping mechanics (multi-directional and multi-piece jumps)</li>
+                    <li>Designed and balanced AI opponent behavior for offline play</li>
+                    <li>Integrated online multiplayer functionality with ranking and matchmaking systems</li>
+                    <li>Collaborated on UI/UX design for smooth player interaction</li>
+                    <li>Optimized performance for a wide range of mobile devices</li>
+                </ul>
+            </div>
+
+            <div class="info-section">
+                <h2>Technical Details</h2>
+                <p>Built using Unity and C#, Kingsters features a robust architecture supporting both online and offline gameplay. The game includes:</p>
+                <ul>
+                    <li>Custom pathfinding for piece movement and jump calculations</li>
+                    <li>State management for turn-based gameplay</li>
+                    <li>Network synchronization for real-time multiplayer</li>
+                    <li>Device-optimized graphics and animations</li>
+                </ul>
+            </div>
+
+            <div class="info-section">
+                <h2>Try It Out</h2>
+                <p>Kingsters is available for download on the App Store. Experience the strategic depth and fast-paced gameplay today!</p>
+                <a href="#" class="cta-button" target="_blank" id="app-store-button">
+                    <i class="fab fa-apple"></i> Download on App Store
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Le Quoc Vu Do. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple image gallery functionality
+        document.querySelectorAll('.thumbnail').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                const mainImg = document.getElementById('main-image');
+                const tempSrc = mainImg.src;
+                mainImg.src = this.src;
+                this.src = tempSrc;
+            });
+        });
+        document.getElementById('app-store-link').href = 'https://apps.apple.com/us/app/kingsters/id6443647681';
+        document.getElementById('app-store-button').href = 'https://apps.apple.com/us/app/kingsters/id6443647681';
+    </script>
+</body>
+</html>
